@@ -19,9 +19,9 @@ class ModerationAPIClient:
     that OpenAI's content policy prohibits and take action, for instance by filtering it.
     """
 
-    # For descriptions of the models, see https://beta.openai.com/docs/api-reference/moderations/create
-    LATEST_MODEL: str = "text-moderation-latest"
-    STABLE_MODEL: str = "text-moderation-stable"
+    # For descriptions of the models, see https://platform.openai.com/docs/models/omni-moderation-latest
+    LATEST_MODEL: str = "omni-moderation-latest"
+    STABLE_MODEL: str = "omni-moderation-2024-09-26"
 
     # List of categories (https://beta.openai.com/docs/guides/moderation/overview)
     HATE: str = "hate"

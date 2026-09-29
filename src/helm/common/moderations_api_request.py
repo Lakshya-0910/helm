@@ -7,11 +7,8 @@ class ModerationAPIRequest:
     # Text to check against OpenAI's content policy
     text: str
 
-    # From https://beta.openai.com/docs/api-reference/moderations/create,
-    # "the default is text-moderation-latest which will be automatically upgraded over time.
-    # This ensures you are always using our most accurate model. If you use text-moderation-stable,
-    # we will provide advanced notice before updating the model. Accuracy of text-moderation-stable
-    # may be slightly lower than for text-moderation-latest."
+    # If True, use omni-moderation-latest; otherwise use the dated snapshot omni-moderation-2024-09-26.
+    # These replaced the text-moderation models, which OpenAI retired on 27 October 2025.
     use_latest_model: bool = False
 
 
